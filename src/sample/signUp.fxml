@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUpController">
+    <children>
+        <AnchorPane layoutX="-1.0" layoutY="107.0" prefHeight="293.0" prefWidth="706.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <TextField fx:id="login_field" layoutX="242.0" layoutY="73.0" prefHeight="25.0" prefWidth="222.0" promptText="Логин" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="password_field" layoutX="242.0" layoutY="159.0" prefHeight="25.0" prefWidth="222.0" promptText="Пароль" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </PasswordField>
+                <Label layoutX="277.0" prefHeight="71.0" prefWidth="353.0" text="Авторизация" textAlignment="CENTER" textFill="#978f8f">
+                    <font>
+                        <Font name="Verdana Italic" size="24.0" />
+                    </font>
+                </Label>
+                <Button fx:id="authSignButton" layoutX="285.0" layoutY="231.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: #F39C63;" text="Войти" textFill="#f8f3f3">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <Label layoutX="235.0" layoutY="22.0" text="00300.ru" textFill="#fcfafa">
+            <font>
+                <Font name="Tahoma" size="56.0" />
+            </font>
+        </Label>
+        <Button fx:id="loginSignButton" layoutX="542.0" layoutY="22.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: #F39C63;" text="Зарегистрироваться" textFill="#f8f3f3" />
+    </children>
+</AnchorPane>
